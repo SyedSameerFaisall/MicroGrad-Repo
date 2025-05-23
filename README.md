@@ -1,31 +1,37 @@
-This project is a Python implementation of a scalar-valued automatic differentiation (autograd) engine and a basic neural network library. **It was created by closely following Andrej Karpathy's renowned 'Neural Networks: Zero to Hero' video side by side.** The primary motivation behind this endeavor was to gain a deep, hands-on understanding of the fundamental mechanisms of backpropagation and gradient descent, which are at the heart of how neural networks learn.
+This project is a Python implementation of a scalar-valued automatic differentiation (autograd) engine and a basic neural network library.
 
-This repository serves as a personal exploration and a testament to the "learn by doing" philosophy.
+Created by closely following Andrej Karpathy's renowned "Neural Networks: Zero to Hero" series.
 
-## What This Project Implements
+The primary motivation behind this project was to gain a deep, hands-on understanding of backpropagation and gradient descent, which are the core learning mechanisms in neural networks. This repository is a personal exploration and a testament to the "learn by doing" philosophy.
 
-* **Scalar Autograd Engine (`Value` object):**
-    * Tracks a computational graph for mathematical operations.
-    * Automatically computes gradients via backpropagation (`backward()` method).
-    * Supports essential arithmetic operations (`+`, `*`, `-`, `/`, `**`) and activation functions like `tanh` and `exp`.
-* **Basic Neural Network Components:**
-    * `Neuron`: A single neuron with weights, a bias, and `tanh` activation.
-    * `Layer`: A collection of neurons forming a layer.
-    * `MLP`: A Multi-Layer Perceptron built from these layers.
-* **Computational Graph Visualization:**
-    * Utilities to render the graph of operations using Graphviz, offering visual insight into the forward and backward passes.
+## ✨ What This Project Implements
+
+### Scalar Autograd Engine (Value class)
+* Tracks a computational graph for mathematical operations.
+* Performs automatic differentiation using a `.backward()` method.
+* Supports core arithmetic operations: `+`, `-`, `*`, `/`, `**`.
+* Includes activation functions like `tanh`, `exp`.
+
+### 🎃 Neural Network Components
+* **Neuron:** Represents a single neuron with weights, bias, and `tanh` activation.
+* **Layer:** A collection of neurons.
+* **MLP:** A Multi-Layer Perceptron, built from layers.
+
+### 📈 Graph Visualization
+* Uses Graphviz to visualize the computational graph, providing insights into both the forward and backward passes.
 
 ## Project Structure
 
 MicroGrad-Repo/
-├── micrograd/            # The core library code
-│   ├── engine.py       # Contains the Value class for autograd
-│   ├── nn.py           # Neuron, Layer, and MLP class definitions
-│   ├── viz.py          # Visualization functions using Graphviz
-│   └── init.py     # Makes 'micrograd' a Python package
-├── examples/             # Python scripts demonstrating usage
-|   |── Graph_outputs/        # Directory where graph images are saved (auto-created)
-│   ├── basic_usage.py
-│   ├── single_neuron_example.py
-│   └── train_mlp.py
-├── README.md             # This file
+├── micrograd/                # Core library
+│   ├── engine.py           # Value class: autograd engine
+│   ├── nn.py               # Neuron, Layer, MLP classes
+│   ├── viz.py              # Computational graph visualization tools
+│   └── init.py         # Makes 'micrograd' a Python package
+├── examples/                 # Example scripts
+│   ├── Graph_outputs/      # Auto-created folder for saving visualizations
+│   ├── basic_usage.py      # Demonstrates Value and operations
+│   ├── single_neuron_example.py # A basic neuron training example
+│   └── train_mlp.py        # End-to-end MLP training on toy data
+└── README.md                 # This file
+
