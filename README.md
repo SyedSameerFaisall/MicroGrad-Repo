@@ -22,16 +22,4 @@ The primary motivation behind this project was to gain a deep, hands-on understa
 
 ## Project Structure
 
-MicroGrad-Repo/
-├── micrograd/                # Core library
-│   ├── engine.py           # Value class: autograd engine
-│   ├── nn.py               # Neuron, Layer, MLP classes
-│   ├── viz.py              # Computational graph visualization tools
-│   └── init.py         # Makes 'micrograd' a Python package
-├── examples/                 # Example scripts
-│   ├── Graph_outputs/      # Auto-created folder for saving visualizations
-│   ├── basic_usage.py      # Demonstrates Value and operations
-│   ├── single_neuron_example.py # A basic neuron training example
-│   └── train_mlp.py        # End-to-end MLP training on toy data
-└── README.md                 # This file
-
+![image](https://github.com/user-attachments/assets/743947fc-3489-4f46-9e04-5aef3bfcbf6c)
